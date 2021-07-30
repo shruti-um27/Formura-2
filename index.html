@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            /* border: 12px solid black; */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .container2 {
+            height: 10px;
+            width: 20px;
+            border: 2px black;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .item {
+            /* width: 200px; */
+            height: 100vh;
+            background-color: white;
+            border: 2px solid gray;
+            box-shadow: 3px lightslategray;
+            margin: 10px;
+            padding: 5px;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        .number {
+            /* width: 200px; */
+            /* height: 30px; */
+            /* background-color: rgb(182, 49, 49); */
+            /* border: 2px solid green; */
+            margin: 10px;
+            padding: 5px;
+            font-family: 'Montserrat', sans-serif;
+            height: 30px;
+        }
+
+        #item-1 {
+
+
+            flex-grow: 2;
+
+            width: 150px;
+
+
+        }
+
+        #item-2 {
+            flex-grow: 3;
+
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 2px grey;
+            font-style: italic;
+            /* font-size: larger; */
+            font-size: 25px;
+            /* text-align: center; */
+
+        }
+
+        #item-3 {
+            flex: 2 2 230px;
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+            border-radius: 12px;
+            box-shadow: 2px grey;
+            width: 400px;
+            text-align: center;
+
+        }
+
+        h1 {
+            color: black;
+            font-weight: bold;
+            font-size: 45px;
+            font-family: 'Montserrat', sans-serif;
+
+
+        }
+
+        h2 {
+            color: azure;
+            background-color: rgba(0, 216, 0, 0.705);
+            font-weight: bold;
+            font-size: 45px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h3 {
+            color: black;
+            font-weight: bold;
+            font-size: 35px;
+            text-decoration: chartreuse;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        li {
+            font-weight: 200;
+            font-size: 25px;
+        }
+
+        h4 {
+            color: darkgray;
+            font-style: italic;
+        }
+
+        .container3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* flex-direction: row; */
+        }
+
+        .img-col {
+            flex-basis: 10%;
+        }
+
+        h3 {
+            border-bottom: 12px #18ec26;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            font-family:'Montserrat', sans-serif; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item" id="item-1">
+            <h2>
+                Dashboard
+            </h2>
+            <h3> BLOG PAGE</h3>
+            <hr>
+
+            <ol>
+
+                <li> <a href="blogs.html">Blogs</a> 
+                    </li>
+                <li>Subscriber Count</li>
+            </ol>
+            <h3>COMMUNITY PAGE</h3>
+            <ol>
+                <li>
+                    Posts
+                </li>
+                <li>
+                    Events
+                </li>
+                <li>News</li>
+                <li>Soon</li>
+            </ol>
+
+        </div>
+        <div class="item" id="item-2">
+            <h4>
+                Popular blogs
+            </h4>
+            <div class="container3">
+                <div class="img-col">
+                    <img src="img/image-removebg-preview (10).png" alt="error">
+                </div>
+
+                <div class="text-col">
+                    <strong>Lorem ipsum dolor sit.
+                    </strong>
+                    <br>
+
+                    100 Views 14 Comments
+                </div>
+
+
+            </div>
+            <br>
+            <div class="container3">
+                <div class="img-col">
+                    <img src="img/image-removebg-preview (10).png" alt="error">
+                </div>
+
+                <div class="text-col">
+                    <strong>Lorem ipsum dolor sit.
+                    </strong>
+                    <br>
+
+                    100 Views 14 Comments
+                </div>
+
+
+            </div>
+            <br>
+            <div class="container3">
+                <div class="img-col">
+                    <img src="img/image-removebg-preview (10).png" alt="error">
+                </div>
+
+                <div class="text-col">
+                    <strong>Lorem ipsum dolor sit.
+                    </strong>
+                    <br>
+
+                    100 Views 14 Comments
+                </div>
+
+
+            </div>
+            <br>
+            <div class="container3">
+                <div class="img-col">
+                    <img src="img/image-removebg-preview (10).png" alt="error">
+                </div>
+
+                <div class="text-col">
+                    <strong>Lorem ipsum dolor sit.
+                    </strong>
+                    <br>
+
+                    100 Views 14 Comments
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <div class="item" id="item-3">
+            <h4>
+                At a glance
+            </h4>
+            <div class="container2">
+                <div class="box">
+                    <strong>Live subscriber Count</strong>
+                    <h1>2,038,465</h1>
+                    <br>
+                    <img src="img/download__1_-removebg-preview.png" alt="error">
+                    <h3>6054</h3>
+                    Members
+                </div>
+                <br>
+                <div class="container2">
+                    <div class="number" id="no-1">
+                        <h1>
+                            387
+                        </h1>
+
+                        Active Blogs
+                    </div>
+                    <br>
+                    <div class="number" id="no-2">
+                        <h1>
+                            212
+                        </h1>
+                        Non-Active Blogs
+                    </div>
+                    <br>
+                    <div class="number" id="no-3">
+                        <h1>
+                            387
+                        </h1>
+                        Active Posts
+                    </div>
+                    <br>
+                    <div class="number" id="no-4">
+                        <h1>
+                            212
+                        </h1>
+                        Non-Active Posts
+                    </div>
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
